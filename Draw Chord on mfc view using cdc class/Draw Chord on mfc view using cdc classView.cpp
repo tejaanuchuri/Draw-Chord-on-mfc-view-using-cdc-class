@@ -59,7 +59,7 @@ void CDrawChordonmfcviewusingcdcclassView::OnDraw(CDC* pDC)
 	ASSERT_VALID(pDoc);
 	if (!pDoc)
 		return;
-	//pDC->SetArcDirection(AD_CLOCKWISE);
+	pDC->SetArcDirection(AD_CLOCKWISE);
 	pDC->Chord(20, 20, 226, 144, 202, 115, 105, 32);
 	// TODO: add draw code for native data here
 }
